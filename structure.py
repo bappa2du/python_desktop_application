@@ -7,7 +7,7 @@ class HelloWorld(QDialog):
     def __init__(self):
         QDialog.__init__(self)
 
-        layout = QVBoxLayout()
+        layout = QHBoxLayout()
 
         self.label = QLabel("Hello World!")
         line_edit = QLineEdit()
