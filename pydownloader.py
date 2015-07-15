@@ -25,6 +25,7 @@ class Downloader(QDialog):
         self.setLayout(layout)
 
         self.setWindowTitle("PyDownloader")
+        self.setFocus()
 
 
 app = QApplication(sys.argv)
