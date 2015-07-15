@@ -1,6 +1,7 @@
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 import sys
+import urllib.request
 
 
 class Downloader(QDialog):
@@ -9,26 +10,39 @@ class Downloader(QDialog):
 
         layout = QVBoxLayout()
 
-        url = QLineEdit()
-        save_location = QLineEdit()
-        progress = QProgressBar()
+        self.url = QLineEdit()
+        self.save_location = QLineEdit()
+        self.progress = QProgressBar()
         download = QPushButton("Download")
 
-        url.setPlaceholderText("URL")
-        save_location.setPlaceholderText("File save Location")
+        self.url.setPlaceholderText("URL")
+        self.save_location.setPlaceholderText("File save Location")
 
-        progress.setValue(0)
-        progress.setAlignment(Qt.AlignHCenter)
+        self.progress.setValue(0)
+        self.progress.setAlignment(Qt.AlignHCenter)
 
-        layout.addWidget(url)
-        layout.addWidget(save_location)
-        layout.addWidget(progress)
+        layout.addWidget(self.url)
+        layout.addWidget(self.save_location)
+        layout.addWidget(self.progress)
         layout.addWidget(download)
 
         self.setLayout(layout)
 
         self.setWindowTitle("PyDownloader")
         self.setFocus()
+
+        download.clicked.connect(self.download)
+
+    def download(self):
+        url = self.url.text()
+        save_location = self.save_location.text()
+        urllib.request.urlretrieve(url, save_location, self.report)
+
+    def report(self, blocknum, blocksize, totalsize):
+        readsofar = blocknum * blocksize
+        if totalsize > 0:
+            percent = readsofar * 100 / totalsize
+            self.progress.setValue(int(percent))
 
 
 app = QApplication(sys.argv)
