@@ -27,8 +27,8 @@
       <file leaf-file-name="structure.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5762195">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6585366">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -320,7 +320,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436983724717</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="horizontal layout">
+      <created>1436985336398</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1436985336399</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -365,7 +371,8 @@
     <MESSAGE value="gitignore update" />
     <MESSAGE value="change text for label" />
     <MESSAGE value="change text for label using function" />
-    <option name="LAST_COMMIT_MESSAGE" value="change text for label using function" />
+    <MESSAGE value="horizontal layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="horizontal layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -400,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5762195">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6585366">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
