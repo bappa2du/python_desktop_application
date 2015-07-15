@@ -19,6 +19,7 @@ class HelloWorld(QDialog):
 
         self.setLayout(layout)
         button.clicked.connect(self.close)
+        line_edit.textChanged.connect(label.setText)
 
 
 app = QApplication(sys.argv)
