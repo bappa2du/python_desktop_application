@@ -17,6 +17,8 @@ class Downloader(QDialog):
         url.setPlaceholderText("URL")
         save_location.setPlaceholderText("File save Location")
 
+        progress.setValue(0)
+
         layout.addWidget(url)
         layout.addWidget(save_location)
         layout.addWidget(progress)
