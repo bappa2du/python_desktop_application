@@ -14,12 +14,17 @@ class Downloader(QDialog):
         progress = QProgressBar()
         download = QPushButton("Download")
 
+        url.setPlaceholderText("URL")
+        save_location.setPlaceholderText("File save Location")
+
         layout.addWidget(url)
         layout.addWidget(save_location)
         layout.addWidget(progress)
         layout.addWidget(download)
 
         self.setLayout(layout)
+
+        self.setWindowTitle("PyDownloader")
 
 
 app = QApplication(sys.argv)
