@@ -27,8 +27,8 @@
       <file leaf-file-name="pydownloader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6585366">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.7820122">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -370,7 +370,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436986476267</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="set progressbar value">
+      <created>1436986543264</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1436986543264</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -420,7 +426,8 @@
     <MESSAGE value="new pydownloader app init" />
     <MESSAGE value="set window title and place holder text" />
     <MESSAGE value="remove autofocus" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove autofocus" />
+    <MESSAGE value="set progressbar value" />
+    <option name="LAST_COMMIT_MESSAGE" value="set progressbar value" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -471,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pydownloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6585366">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.7820122">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
