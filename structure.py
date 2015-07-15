@@ -18,6 +18,7 @@ class HelloWorld(QDialog):
         layout.addWidget(button)
 
         self.setLayout(layout)
+        button.clicked.connect(self.close)
 
 
 app = QApplication(sys.argv)
