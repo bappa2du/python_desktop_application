@@ -14,6 +14,7 @@ class Downloader(QDialog):
         self.save_location = QLineEdit()
         self.progress = QProgressBar()
         download = QPushButton("Download")
+        browse = QPushButton("Browse")
 
         self.url.setPlaceholderText("URL")
         self.save_location.setPlaceholderText("File save Location")
@@ -23,6 +24,7 @@ class Downloader(QDialog):
 
         layout.addWidget(self.url)
         layout.addWidget(self.save_location)
+        layout.addWidget(browse)
         layout.addWidget(self.progress)
         layout.addWidget(download)
 
@@ -30,8 +32,12 @@ class Downloader(QDialog):
 
         self.setWindowTitle("PyDownloader")
         self.setFocus()
-
+        browse.clicked.connect(self.browse_file)
         download.clicked.connect(self.download)
+
+    def browse_file(self):
+        save_file = QFileDialog.getSaveFileName(self,caption="Save file as", directory=".",filter="All Files(*.*)")
+        self.save_location.setText(QDir.toNativeSeparators(save_file))
 
     def download(self):
         url = self.url.text()
